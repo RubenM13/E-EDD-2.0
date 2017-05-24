@@ -1,0 +1,40 @@
+.PS
+copy "sequence.pic";
+
+# Object definition
+object(S0,"s0:T0");
+object(S1,"s1:T1");
+object(S2,"s2:T2");
+object(S3,"s3:T3");
+object(S4,"s4:T4");
+object(S5,"s5:T5");
+object(S6,"s6:T6");
+object(S7,"s7:T7");
+object(S8,"s8:T8");
+object(S9,"s9:T9");
+
+# Message exchange
+message(S0,S1,"execute()");
+message(S1,S2,"execute()");
+message(S2,S3,"execute()");
+message(S3,S4,"execute()");
+message(S4,S5,"execute()");
+message(S5,S6,"execute()");
+message(S6,S7,"execute()");
+message(S7,S8,"execute()");
+message(S8,S9,"execute()");
+message(S9,S0,"execute()");
+
+# Object lifeline completion
+complete(S0);
+complete(S1);
+complete(S2);
+complete(S3);
+complete(S4);
+complete(S5);
+complete(S6);
+complete(S7);
+complete(S8);
+complete(S9);
+
+.PE

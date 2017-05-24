@@ -1,0 +1,1 @@
+erl -sname edderlang@localhost -setcookie erlide -run edd_jserver start -noshell -s erlang halt

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmftool:ToolRegistry
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
+  <palette
+      title="ed2Palette"
+      description="Palette ed2">
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="ed2 nodes"
+        description="Tool group nodes"
+        collapsible="true"
+        stack="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ED2"
+          description="Create new ED2">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Node"
+          description="Create new Node">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Leaf"
+          description="Create new Leaf">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+    </tools>
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="ed2 relations"
+        description="Tool group relations"
+        collapsible="true"
+        stack="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ED2TreeElements"
+          description="Create new ED2TreeElements">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/obj16/Edge.gif"
+            bundle="es.ucm.fdi.ed2.emf.diagram"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/obj16/Edge.gif"
+            bundle="es.ucm.fdi.ed2.emf.diagram"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="NodeNodes"
+          description="Create new NodeNodes">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/obj16/Edge1.gif"
+            bundle="es.ucm.fdi.ed2.emf.diagram"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/obj16/Edge1.gif"
+            bundle="es.ucm.fdi.ed2.emf.diagram"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="NodeLeaves"
+          description="Create new NodeLeaves">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/obj16/Edge2.gif"
+            bundle="es.ucm.fdi.ed2.emf.diagram"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/obj16/Edge2.gif"
+            bundle="es.ucm.fdi.ed2.emf.diagram"/>
+      </tools>
+    </tools>
+  </palette>
+</gmftool:ToolRegistry>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmftool:ToolRegistry
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
+  <palette
+      title="eddPalette">
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="edd">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Block"
+          description="Create new Block">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="TreeElement"
+          description="Create new TreeElement">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="TreeElementLinks"
+          description="Create new TreeElementLinks">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/obj16/Edge.gif"
+            bundle="es.ucm.fdi.edd.gmf.diagram"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/obj16/Edge.gif"
+            bundle="es.ucm.fdi.edd.gmf.diagram"/>
+      </tools>
+    </tools>
+  </palette>
+</gmftool:ToolRegistry>

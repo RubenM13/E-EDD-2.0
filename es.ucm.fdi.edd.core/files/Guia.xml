@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<guia id="1" name="Tutoriales Android" image="guide1">
+	<tema id="1" name="Unidad 1. Visión general y entorno de desarrollo">
+		<subTema id="1" name="Introducción">
+			<bloquePreguntas>
+				<pregunta id="1" idAyuda="1" idTipoPregunta="4"
+					pregunta="¿Qué plataforma para móviles soporta varias familias de procesadores, además de la familia ARM?">
+					<respuestaLink idRespuesta="1" esRespuesta="true" />
+					<respuestaLink idRespuesta="2" esRespuesta="false" />
+					<respuestaLink idRespuesta="3" esRespuesta="false" />
+					<respuestaLink idRespuesta="4" esRespuesta="false" />
+					<respuestaLink idRespuesta="5" esRespuesta="false" />
+				</pregunta>
+				<pregunta id="2" idAyuda="2" idTipoPregunta="4"
+					pregunta="¿Qué dos plataformas son de software libre?">
+					<respuestaLink idRespuesta="6" esRespuesta="false" />
+					<respuestaLink idRespuesta="7" esRespuesta="true" />
+					<respuestaLink idRespuesta="8" esRespuesta="false" />
+					<respuestaLink idRespuesta="9" esRespuesta="false" />
+				</pregunta>
+				<pregunta id="3" idAyuda="3" idTipoPregunta="4"
+					pregunta="¿Qué plataforma no permiten la ejecución de código nativo del procesador?">
+					<respuestaLink idRespuesta="1" esRespuesta="false" />
+					<respuestaLink idRespuesta="2" esRespuesta="false" />
+					<respuestaLink idRespuesta="3" esRespuesta="false" />
+					<respuestaLink idRespuesta="5" esRespuesta="true" />
+				</pregunta>
+				<pregunta id="4" idAyuda="4" idTipoPregunta="4"
+					pregunta="¿Qué plataforma para móviles NO utiliza WebKit como motor de navegación Web?">
+					<respuestaLink idRespuesta="2" esRespuesta="false" />
+					<respuestaLink idRespuesta="1" esRespuesta="false" />
+					<respuestaLink idRespuesta="3" esRespuesta="false" />
+					<respuestaLink idRespuesta="4" esRespuesta="true" />
+					<respuestaLink idRespuesta="5" esRespuesta="false" />
+				</pregunta>
+				<pregunta id="5" idAyuda="5" idTipoPregunta="4"
+					pregunta="¿Qué plataforma ... 2.0?">
+					<respuestaLink idRespuesta="2" esRespuesta="false" />
+					<respuestaLink idRespuesta="1" esRespuesta="false" />
+					<respuestaLink idRespuesta="3" esRespuesta="false" />
+					<respuestaLink idRespuesta="4" esRespuesta="true" />
+					<respuestaLink idRespuesta="5" esRespuesta="false" />
+				</pregunta>
+				<pregunta id="6" idAyuda="6" idTipoPregunta="4"
+					pregunta="¿Qué plataforma ... 3.0?">
+					<respuestaLink idRespuesta="2" esRespuesta="false" />
+					<respuestaLink idRespuesta="1" esRespuesta="false" />
+					<respuestaLink idRespuesta="3" esRespuesta="false" />
+					<respuestaLink idRespuesta="4" esRespuesta="true" />
+					<respuestaLink idRespuesta="5" esRespuesta="false" />
+				</pregunta>
+			</bloquePreguntas>
+			<bloqueAyudas>
+				<ayuda idAyuda="1">Ayuda1</ayuda>
+				<ayuda idAyuda="2">Ayuda2</ayuda>
+				<ayuda idAyuda="3">Ayuda3</ayuda>
+				<ayuda idAyuda="4">Ayuda4</ayuda>
+				<ayuda idAyuda="5">Ayuda4</ayuda>
+				<ayuda idAyuda="6">Ayuda4</ayuda>
+			</bloqueAyudas>
+		</subTema>
+		<subTema id="2" name="Capitulo I">
+		</subTema>
+		<subTema id="3" name="Capitulo II">
+		</subTema>
+		<subTema id="4" name="Capitulo III">
+		</subTema>
+	</tema>
+	<bloqueRespuestas>
+		<respuesta idRespuesta="1">Android</respuesta>
+		<respuesta idRespuesta="2">Apple IOS</respuesta>
+		<respuesta idRespuesta="3">Symbian</respuesta>
+		<respuesta idRespuesta="4">Windows Phone</respuesta>
+		<respuesta idRespuesta="5">BlackBerry</respuesta>
+		<respuesta idRespuesta="6">Android y Apple IOS</respuesta>
+		<respuesta idRespuesta="7">Android y Symbian</respuesta>
+		<respuesta idRespuesta="8">Android y BlackBerry</respuesta>
+		<respuesta idRespuesta="9">Windows Phone y BlackBerry</respuesta>
+	</bloqueRespuestas>
+	<bloqueTipoPregunta>
+		<tipoPregunta idTipoPregunta="1">Entero</tipoPregunta>
+		<tipoPregunta idTipoPregunta="2">Decimal</tipoPregunta>
+		<tipoPregunta idTipoPregunta="3">Falso/Verdadero</tipoPregunta>
+		<tipoPregunta idTipoPregunta="4">Opción única</tipoPregunta>
+		<tipoPregunta idTipoPregunta="5">Opción múltiple</tipoPregunta>
+		<tipoPregunta idTipoPregunta="6">Texto</tipoPregunta>
+	</bloqueTipoPregunta>
+</guia>
+	

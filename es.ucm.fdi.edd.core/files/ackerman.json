@@ -1,0 +1,730 @@
+{
+  "vertices": [
+    {
+      "node": "20",
+      "question": "ackerman:ack(2, 1) = 2"
+    },
+    {
+      "node": "71",
+      "question": "ackerman:ack(0, 1) = 2"
+    },
+    {
+      "node": "87",
+      "question": "ackerman:ack(1, 4) = 5"
+    },
+    {
+      "node": "84",
+      "question": "ackerman:ack(0, 3) = 4"
+    },
+    {
+      "node": "68",
+      "question": "ackerman:ack(2, 2) = 3"
+    },
+    {
+      "node": "48",
+      "question": "ackerman:ack(0, 2) = 3"
+    },
+    {
+      "node": "8",
+      "question": "ackerman:ack(1, 0) = 1"
+    },
+    {
+      "node": "77",
+      "question": "ackerman:ack(2, 3) = 4"
+    },
+    {
+      "node": "28",
+      "question": "ackerman:ack(3, 2) = 3"
+    },
+    {
+      "node": "54",
+      "question": "ackerman:ack(0, 0) = 1"
+    },
+    {
+      "node": "34",
+      "question": "ackerman:ack(0, 1) = 2"
+    },
+    {
+      "node": "75",
+      "question": "ackerman:ack(0, 3) = 4"
+    },
+    {
+      "node": "2",
+      "question": "ackerman:ack(2, 0) = 1"
+    },
+    {
+      "node": "90",
+      "question": "ackerman:main([3, 4]) = 5"
+    },
+    {
+      "node": "66",
+      "question": "ackerman:ack(0, 2) = 3"
+    },
+    {
+      "node": "14",
+      "question": "ackerman:ack(1, 0) = 1"
+    },
+    {
+      "node": "12",
+      "question": "ackerman:ack(3, 1) = 2"
+    },
+    {
+      "node": "85",
+      "question": "ackerman:ack(1, 3) = 4"
+    },
+    {
+      "node": "74",
+      "question": "ackerman:ack(1, 2) = 3"
+    },
+    {
+      "node": "86",
+      "question": "ackerman:ack(0, 4) = 5"
+    },
+    {
+      "node": "43",
+      "question": "ackerman:ack(2, 2) = 3"
+    },
+    {
+      "node": "27",
+      "question": "ackerman:ack(2, 2) = 3"
+    },
+    {
+      "node": "73",
+      "question": "ackerman:ack(0, 2) = 3"
+    },
+    {
+      "node": "18",
+      "question": "ackerman:ack(0, 1) = 2"
+    },
+    {
+      "node": "36",
+      "question": "ackerman:ack(2, 1) = 2"
+    },
+    {
+      "node": "4",
+      "question": "ackerman:ack(0, 0) = 1"
+    },
+    {
+      "node": "38",
+      "question": "ackerman:ack(1, 0) = 1"
+    },
+    {
+      "node": "1",
+      "question": "ackerman:ack(1, 0) = 1"
+    },
+    {
+      "node": "31",
+      "question": "ackerman:ack(2, 0) = 1"
+    },
+    {
+      "node": "62",
+      "question": "ackerman:ack(0, 0) = 1"
+    },
+    {
+      "node": "51",
+      "question": "ackerman:ack(1, 3) = 4"
+    },
+    {
+      "node": "80",
+      "question": "ackerman:ack(0, 1) = 2"
+    },
+    {
+      "node": "56",
+      "question": "ackerman:ack(2, 0) = 1"
+    },
+    {
+      "node": "49",
+      "question": "ackerman:ack(1, 2) = 3"
+    },
+    {
+      "node": "55",
+      "question": "ackerman:ack(1, 0) = 1"
+    },
+    {
+      "node": "82",
+      "question": "ackerman:ack(0, 2) = 3"
+    },
+    {
+      "node": "81",
+      "question": "ackerman:ack(1, 1) = 2"
+    },
+    {
+      "node": "3",
+      "question": "ackerman:ack(3, 0) = 1"
+    },
+    {
+      "node": "33",
+      "question": "ackerman:ack(1, 0) = 1"
+    },
+    {
+      "node": "41",
+      "question": "ackerman:ack(0, 2) = 3"
+    },
+    {
+      "node": "89",
+      "question": "ackerman:ack(3, 4) = 5"
+    },
+    {
+      "node": "5",
+      "question": "ackerman:ack(1, 0) = 1"
+    },
+    {
+      "node": "58",
+      "question": "ackerman:ack(1, 0) = 1"
+    },
+    {
+      "node": "40",
+      "question": "ackerman:ack(1, 1) = 2"
+    },
+    {
+      "node": "32",
+      "question": "ackerman:ack(0, 0) = 1"
+    },
+    {
+      "node": "16",
+      "question": "ackerman:ack(0, 0) = 1"
+    },
+    {
+      "node": "7",
+      "question": "ackerman:ack(0, 0) = 1"
+    },
+    {
+      "node": "46",
+      "question": "ackerman:ack(0, 1) = 2"
+    },
+    {
+      "node": "6",
+      "question": "ackerman:ack(2, 0) = 1"
+    },
+    {
+      "node": "65",
+      "question": "ackerman:ack(1, 1) = 2"
+    },
+    {
+      "node": "37",
+      "question": "ackerman:ack(0, 0) = 1"
+    },
+    {
+      "node": "78",
+      "question": "ackerman:ack(0, 0) = 1"
+    },
+    {
+      "node": "9",
+      "question": "ackerman:ack(0, 1) = 2"
+    },
+    {
+      "node": "63",
+      "question": "ackerman:ack(1, 0) = 1"
+    },
+    {
+      "node": "10",
+      "question": "ackerman:ack(1, 1) = 2"
+    },
+    {
+      "node": "42",
+      "question": "ackerman:ack(1, 2) = 3"
+    },
+    {
+      "node": "45",
+      "question": "ackerman:ack(1, 0) = 1"
+    },
+    {
+      "node": "50",
+      "question": "ackerman:ack(0, 3) = 4"
+    },
+    {
+      "node": "13",
+      "question": "ackerman:ack(0, 0) = 1"
+    },
+    {
+      "node": "52",
+      "question": "ackerman:ack(2, 3) = 4"
+    },
+    {
+      "node": "76",
+      "question": "ackerman:ack(1, 3) = 4"
+    },
+    {
+      "node": "64",
+      "question": "ackerman:ack(0, 1) = 2"
+    },
+    {
+      "node": "35",
+      "question": "ackerman:ack(1, 1) = 2"
+    },
+    {
+      "node": "26",
+      "question": "ackerman:ack(1, 2) = 3"
+    },
+    {
+      "node": "30",
+      "question": "ackerman:ack(1, 0) = 1"
+    },
+    {
+      "node": "61",
+      "question": "ackerman:ack(2, 1) = 2"
+    },
+    {
+      "node": "79",
+      "question": "ackerman:ack(1, 0) = 1"
+    },
+    {
+      "node": "21",
+      "question": "ackerman:ack(0, 0) = 1"
+    },
+    {
+      "node": "25",
+      "question": "ackerman:ack(0, 2) = 3"
+    },
+    {
+      "node": "0",
+      "question": "ackerman:ack(0, 0) = 1"
+    },
+    {
+      "node": "53",
+      "question": "ackerman:ack(3, 3) = 4"
+    },
+    {
+      "node": "15",
+      "question": "ackerman:ack(2, 0) = 1"
+    },
+    {
+      "node": "11",
+      "question": "ackerman:ack(2, 1) = 2"
+    },
+    {
+      "node": "19",
+      "question": "ackerman:ack(1, 1) = 2"
+    },
+    {
+      "node": "57",
+      "question": "ackerman:ack(0, 0) = 1"
+    },
+    {
+      "node": "60",
+      "question": "ackerman:ack(1, 1) = 2"
+    },
+    {
+      "node": "47",
+      "question": "ackerman:ack(1, 1) = 2"
+    },
+    {
+      "node": "72",
+      "question": "ackerman:ack(1, 1) = 2"
+    },
+    {
+      "node": "59",
+      "question": "ackerman:ack(0, 1) = 2"
+    },
+    {
+      "node": "17",
+      "question": "ackerman:ack(1, 0) = 1"
+    },
+    {
+      "node": "24",
+      "question": "ackerman:ack(1, 1) = 2"
+    },
+    {
+      "node": "88",
+      "question": "ackerman:ack(2, 4) = 5"
+    },
+    {
+      "node": "44",
+      "question": "ackerman:ack(0, 0) = 1"
+    },
+    {
+      "node": "83",
+      "question": "ackerman:ack(1, 2) = 3"
+    },
+    {
+      "node": "70",
+      "question": "ackerman:ack(1, 0) = 1"
+    },
+    {
+      "node": "29",
+      "question": "ackerman:ack(0, 0) = 1"
+    },
+    {
+      "node": "22",
+      "question": "ackerman:ack(1, 0) = 1"
+    },
+    {
+      "node": "69",
+      "question": "ackerman:ack(0, 0) = 1"
+    },
+    {
+      "node": "39",
+      "question": "ackerman:ack(0, 1) = 2"
+    },
+    {
+      "node": "23",
+      "question": "ackerman:ack(0, 1) = 2"
+    },
+    {
+      "node": "67",
+      "question": "ackerman:ack(1, 2) = 3"
+    }
+  ],
+  "edges": [
+    {
+      "from": "20",
+      "to": "19"
+    },
+    {
+      "from": "20",
+      "to": "15"
+    },
+    {
+      "from": "87",
+      "to": "86"
+    },
+    {
+      "from": "87",
+      "to": "85"
+    },
+    {
+      "from": "68",
+      "to": "67"
+    },
+    {
+      "from": "68",
+      "to": "61"
+    },
+    {
+      "from": "8",
+      "to": "7"
+    },
+    {
+      "from": "77",
+      "to": "76"
+    },
+    {
+      "from": "77",
+      "to": "68"
+    },
+    {
+      "from": "28",
+      "to": "27"
+    },
+    {
+      "from": "28",
+      "to": "12"
+    },
+    {
+      "from": "2",
+      "to": "1"
+    },
+    {
+      "from": "90",
+      "to": "89"
+    },
+    {
+      "from": "14",
+      "to": "13"
+    },
+    {
+      "from": "12",
+      "to": "11"
+    },
+    {
+      "from": "12",
+      "to": "3"
+    },
+    {
+      "from": "85",
+      "to": "84"
+    },
+    {
+      "from": "85",
+      "to": "83"
+    },
+    {
+      "from": "74",
+      "to": "73"
+    },
+    {
+      "from": "74",
+      "to": "72"
+    },
+    {
+      "from": "43",
+      "to": "42"
+    },
+    {
+      "from": "43",
+      "to": "36"
+    },
+    {
+      "from": "27",
+      "to": "26"
+    },
+    {
+      "from": "27",
+      "to": "20"
+    },
+    {
+      "from": "36",
+      "to": "35"
+    },
+    {
+      "from": "36",
+      "to": "31"
+    },
+    {
+      "from": "38",
+      "to": "37"
+    },
+    {
+      "from": "1",
+      "to": "0"
+    },
+    {
+      "from": "31",
+      "to": "30"
+    },
+    {
+      "from": "51",
+      "to": "50"
+    },
+    {
+      "from": "51",
+      "to": "49"
+    },
+    {
+      "from": "56",
+      "to": "55"
+    },
+    {
+      "from": "49",
+      "to": "48"
+    },
+    {
+      "from": "49",
+      "to": "47"
+    },
+    {
+      "from": "55",
+      "to": "54"
+    },
+    {
+      "from": "81",
+      "to": "80"
+    },
+    {
+      "from": "81",
+      "to": "79"
+    },
+    {
+      "from": "3",
+      "to": "2"
+    },
+    {
+      "from": "33",
+      "to": "32"
+    },
+    {
+      "from": "89",
+      "to": "88"
+    },
+    {
+      "from": "89",
+      "to": "53"
+    },
+    {
+      "from": "5",
+      "to": "4"
+    },
+    {
+      "from": "58",
+      "to": "57"
+    },
+    {
+      "from": "40",
+      "to": "39"
+    },
+    {
+      "from": "40",
+      "to": "38"
+    },
+    {
+      "from": "6",
+      "to": "5"
+    },
+    {
+      "from": "65",
+      "to": "64"
+    },
+    {
+      "from": "65",
+      "to": "63"
+    },
+    {
+      "from": "63",
+      "to": "62"
+    },
+    {
+      "from": "10",
+      "to": "9"
+    },
+    {
+      "from": "10",
+      "to": "8"
+    },
+    {
+      "from": "42",
+      "to": "41"
+    },
+    {
+      "from": "42",
+      "to": "40"
+    },
+    {
+      "from": "45",
+      "to": "44"
+    },
+    {
+      "from": "52",
+      "to": "51"
+    },
+    {
+      "from": "52",
+      "to": "43"
+    },
+    {
+      "from": "76",
+      "to": "75"
+    },
+    {
+      "from": "76",
+      "to": "74"
+    },
+    {
+      "from": "35",
+      "to": "34"
+    },
+    {
+      "from": "35",
+      "to": "33"
+    },
+    {
+      "from": "26",
+      "to": "25"
+    },
+    {
+      "from": "26",
+      "to": "24"
+    },
+    {
+      "from": "30",
+      "to": "29"
+    },
+    {
+      "from": "61",
+      "to": "60"
+    },
+    {
+      "from": "61",
+      "to": "56"
+    },
+    {
+      "from": "79",
+      "to": "78"
+    },
+    {
+      "from": "53",
+      "to": "52"
+    },
+    {
+      "from": "53",
+      "to": "28"
+    },
+    {
+      "from": "15",
+      "to": "14"
+    },
+    {
+      "from": "11",
+      "to": "10"
+    },
+    {
+      "from": "11",
+      "to": "6"
+    },
+    {
+      "from": "19",
+      "to": "18"
+    },
+    {
+      "from": "19",
+      "to": "17"
+    },
+    {
+      "from": "60",
+      "to": "59"
+    },
+    {
+      "from": "60",
+      "to": "58"
+    },
+    {
+      "from": "47",
+      "to": "46"
+    },
+    {
+      "from": "47",
+      "to": "45"
+    },
+    {
+      "from": "72",
+      "to": "71"
+    },
+    {
+      "from": "72",
+      "to": "70"
+    },
+    {
+      "from": "17",
+      "to": "16"
+    },
+    {
+      "from": "24",
+      "to": "23"
+    },
+    {
+      "from": "24",
+      "to": "22"
+    },
+    {
+      "from": "88",
+      "to": "87"
+    },
+    {
+      "from": "88",
+      "to": "77"
+    },
+    {
+      "from": "83",
+      "to": "82"
+    },
+    {
+      "from": "83",
+      "to": "81"
+    },
+    {
+      "from": "70",
+      "to": "69"
+    },
+    {
+      "from": "22",
+      "to": "21"
+    },
+    {
+      "from": "67",
+      "to": "66"
+    },
+    {
+      "from": "67",
+      "to": "65"
+    }
+  ]
+}

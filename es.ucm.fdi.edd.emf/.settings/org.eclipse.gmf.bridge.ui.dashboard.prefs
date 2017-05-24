@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/es.ucm.fdi.edd.emf/model/edd.genmodel
+gmf_dashboard/domainModel=platform\:/resource/es.ucm.fdi.edd.emf/model/edd.ecore
+gmf_dashboard/generationModel=platform\:/resource/es.ucm.fdi.edd.emf/model/edd.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/es.ucm.fdi.edd.emf/model/edd.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/es.ucm.fdi.edd.emf/model/edd.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/es.ucm.fdi.edd.emf/model/edd.gmftool

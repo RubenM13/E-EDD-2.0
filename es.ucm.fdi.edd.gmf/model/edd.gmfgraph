@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="edd">
+  <figures name="Default">
+    <descriptors name="BlockFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="BlockFigure">
+        <layout xsi:type="gmfgraph:BorderLayout"/>
+        <children xsi:type="gmfgraph:Label" name="BlockNameFigure" text="&lt;...>">
+          <layoutData xsi:type="gmfgraph:BorderLayoutData" alignment="BEGINNING" vertical="true"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="BlockCompartmentFigure">
+          <layoutData xsi:type="gmfgraph:BorderLayoutData" vertical="true"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+      <accessors accessor="getFigureBlockCompartmentFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="ModelFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="ModelFigure">
+        <layout xsi:type="gmfgraph:BorderLayout"/>
+        <children xsi:type="gmfgraph:Label" name="ModelNameFigure" text="&lt;...>">
+          <layoutData xsi:type="gmfgraph:BorderLayoutData" alignment="BEGINNING" vertical="true"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="ModelCompartmentFigure">
+          <layoutData xsi:type="gmfgraph:BorderLayoutData" vertical="true"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+      <accessors accessor="getFigureModelCompartmentFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="TreeElementFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="TreeElementFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="TreeElementNameFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="TreeElementLinksFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="TreeElementLinksFigure"/>
+    </descriptors>
+  </figures>
+  <nodes name="Model" figure="ModelFigure"/>
+  <nodes name="TreeElement" figure="TreeElementFigure"/>
+  <nodes name="Block" figure="BlockFigure"/>
+  <connections name="TreeElementLinks" figure="TreeElementLinksFigure"/>
+  <compartments name="BlockTreeElementsCompartment" figure="BlockFigure" accessor="//@figures.0/@descriptors.0/@accessors.1"/>
+  <compartments name="ModelBlocksCompartment" figure="ModelFigure" accessor="//@figures.0/@descriptors.1/@accessors.1"/>
+  <labels name="ModelName" figure="ModelFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="TreeElementIndex" figure="TreeElementFigure"/>
+  <labels name="TreeElementName" figure="TreeElementFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+  <labels name="BlockName" figure="BlockFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+</gmfgraph:Canvas>

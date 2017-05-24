@@ -1,0 +1,7 @@
+# Tracing options for the es.ucm.fdi.ed2.emf.diagram plug-in
+
+# Common issues
+es.ucm.fdi.ed2.emf.diagram/debug=false
+
+# Visual IDs
+es.ucm.fdi.ed2.emf.diagram/debug/visualID=false

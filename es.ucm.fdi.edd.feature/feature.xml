@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="es.ucm.fdi.edd.feature"
+      label="Feature"
+      version="1.0.0.qualifier"
+      provider-name="E-EDD">
+
+   <description url="http://www.example.com/description">
+      Descripción del proyecto E-EDD.
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      (C) 2015 Copyright
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      Acuerdo de licencia E-EDD.
+   </license>
+
+   <url>
+      <discovery label="E-EDD" url="https://github.com/jsanchezp/e-edd"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.emf.ecore"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.core.expressions"/>
+      <import plugin="org.eclipse.jface"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.ui.views"/>
+      <import plugin="org.eclipse.ui.navigator"/>
+      <import plugin="org.eclipse.ui.navigator.resources"/>
+      <import plugin="org.eclipse.emf.ecore.xmi"/>
+      <import plugin="org.eclipse.emf.edit.ui"/>
+      <import plugin="org.eclipse.gmf.runtime.emf.core"/>
+      <import plugin="org.eclipse.gmf.runtime.emf.commands.core"/>
+      <import plugin="org.eclipse.gmf.runtime.emf.ui.properties"/>
+      <import plugin="org.eclipse.gmf.runtime.diagram.ui"/>
+      <import plugin="org.eclipse.gmf.runtime.diagram.ui.properties"/>
+      <import plugin="org.eclipse.gmf.runtime.diagram.ui.providers"/>
+      <import plugin="org.eclipse.gmf.runtime.diagram.ui.providers.ide"/>
+      <import plugin="org.eclipse.gmf.runtime.diagram.ui.render"/>
+      <import plugin="org.eclipse.gmf.runtime.diagram.ui.resources.editor"/>
+      <import plugin="org.eclipse.gmf.runtime.diagram.ui.resources.editor.ide"/>
+      <import plugin="org.eclipse.gmf.tooling.runtime"/>
+      <import plugin="org.eclipse.draw2d"/>
+      <import plugin="org.eclipse.gmf.runtime.draw2d.ui"/>
+      <import plugin="es.ucm.fdi.ed2.emf"/>
+      <import plugin="es.ucm.fdi.ed2.emf.edit"/>
+      <import plugin="org.eclipse.gef"/>
+      <import plugin="org.eclipse.emf.edit"/>
+      <import plugin="org.eclipse.emf.transaction"/>
+      <import plugin="es.ucm.fdi.ed2.emf.diagram"/>
+      <import plugin="org.junit"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="es.ucm.fdi.edd.gmf"/>
+      <import plugin="es.ucm.fdi.edd.gmf.edit"/>
+      <import plugin="com.abstratt.content"/>
+      <import plugin="com.abstratt.graphviz"/>
+      <import plugin="com.abstratt.imageviewer"/>
+      <import plugin="org.apache.commons.beanutils"/>
+      <import plugin="org.apache.commons.io"/>
+      <import plugin="es.ucm.fdi.edd.core"/>
+      <import plugin="org.erlide.ui"/>
+      <import plugin="org.erlide.model.api"/>
+      <import plugin="org.eclipse.text"/>
+      <import plugin="org.eclipse.debug.ui"/>
+      <import plugin="org.erlide.libs"/>
+      <import plugin="org.erlide.backend"/>
+      <import plugin="org.erlide.util_eclipse"/>
+      <import plugin="org.erlide.runtime"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.ui.console"/>
+      <import plugin="org.eclipse.jdt.ui"/>
+      <import plugin="org.eclipse.ui.forms"/>
+      <import plugin="org.eclipse.emf.codegen.ecore.ui"/>
+      <import plugin="org.eclipse.search"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="org.apache.commons.lang"/>
+      <import plugin="org.eclipse.gmf.runtime.diagram.core"/>
+      <import plugin="es.ucm.fdi.ed2.emf.editor"/>
+      <import plugin="org.eclipse.core.filesystem"/>
+      <import plugin="org.erlide.model"/>
+      <import plugin="org.eclipse.core.databinding.observable"/>
+      <import plugin="org.eclipse.core.databinding"/>
+      <import plugin="org.eclipse.jface.databinding"/>
+      <import plugin="org.eclipse.e4.core.di"/>
+      <import plugin="org.eclipse.e4.ui.di"/>
+      <import plugin="org.eclipse.e4.ui.services"/>
+      <import plugin="org.emftools.validation.utils"/>
+      <import plugin="org.eclipse.ocl"/>
+      <import plugin="org.eclipse.core.databinding.property"/>
+      <import plugin="org.eclipse.core.databinding.beans"/>
+      <import plugin="org.emftools.emf2gv.util"/>
+      <import plugin="org.emftools.emf2gv.processor.core"/>
+   </requires>
+
+   <plugin
+         id="es.ucm.fdi.ed2.emf"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="es.ucm.fdi.ed2.emf.diagram"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="es.ucm.fdi.ed2.emf.edit"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="es.ucm.fdi.ed2.emf.editor"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="es.ucm.fdi.ed2.emf.tests"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="es.ucm.fdi.edd.core"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="es.ucm.fdi.edd.gmf.diagram"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="es.ucm.fdi.edd.gmf.edit"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="es.ucm.fdi.edd.gmf.editor"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="es.ucm.fdi.edd.gmf.tests"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="es.ucm.fdi.edd.ui"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.qualifier"
+         unpack="false"/>
+
+   <plugin
+         id="es.ucm.fdi.edd.sandbox"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.qualifier"/>
+
+   <plugin
+         id="es.ucm.fdi.edd.gmf"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.qualifier"
+         unpack="false"/>
+
+</feature>

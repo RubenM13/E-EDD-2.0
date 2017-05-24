@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated edd -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="es.ucm.fdi.edd.emf.model.edd.presentation.EddModelWizardID"
+            name="%_UI_EddModelWizard_label"
+            class="es.ucm.fdi.edd.emf.model.edd.presentation.EddModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/EddModelFile.gif">
+         <description>%_UI_EddModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated edd -->
+      <editor
+            id="es.ucm.fdi.edd.emf.model.edd.presentation.EddEditorID"
+            name="%_UI_EddEditor_label"
+            icon="icons/full/obj16/EddModelFile.gif"
+            extensions="edd"
+            class="es.ucm.fdi.edd.emf.model.edd.presentation.EddEditor"
+            contributorClass="es.ucm.fdi.edd.emf.model.edd.presentation.EddActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="ed2">
+  <figures name="Default">
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ED2TreeElementsTargetDecoration">
+      <backgroundColor xsi:type="gmfgraph:ConstantColor" value="red"/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="NodeNodesTargetDecoration">
+      <backgroundColor xsi:type="gmfgraph:ConstantColor" value="green"/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="NodeLeavesTargetDecoration">
+      <backgroundColor xsi:type="gmfgraph:ConstantColor" value="blue"/>
+    </figures>
+    <descriptors name="ED2Figure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="ED2Figure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor" value="lightBlue"/>
+        <children xsi:type="gmfgraph:Label" name="ED2NameFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="NodeFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="NodeFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor" value="yellow"/>
+        <children xsi:type="gmfgraph:Label" name="NodeNameFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="LeafFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="LeafFigure">
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <backgroundColor xsi:type="gmfgraph:ConstantColor" value="lightGreen"/>
+        <children xsi:type="gmfgraph:Label" name="LeafNameFigure" text="&lt;...>"/>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ED2TreeElementsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ED2TreeElementsFigure" targetDecoration="//@figures.0/@figures.0">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="36" green="28" blue="237"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="NodeNodesFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NodeNodesFigure" lineKind="LINE_DASH" targetDecoration="//@figures.0/@figures.1">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="64" blue="64"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="NodeLeavesFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NodeLeavesFigure" lineKind="LINE_DOT" targetDecoration="//@figures.0/@figures.2">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="255" green="128" blue="128"/>
+      </actualFigure>
+    </descriptors>
+  </figures>
+  <nodes name="ED2" figure="ED2Figure"/>
+  <nodes name="Node" figure="NodeFigure"/>
+  <nodes name="Leaf" figure="LeafFigure"/>
+  <connections name="ED2TreeElements" figure="ED2TreeElementsFigure"/>
+  <connections name="NodeNodes" figure="NodeNodesFigure"/>
+  <connections name="NodeLeaves" figure="NodeLeavesFigure"/>
+  <labels name="ED2Name" figure="ED2Figure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="NodeName" figure="NodeFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="LeafName" figure="LeafFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+</gmfgraph:Canvas>

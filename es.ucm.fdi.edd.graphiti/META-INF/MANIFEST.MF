@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: es.ucm.fdi.edd.graphiti;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: es.ucm.fdi.edd.graphiti.Activator
+Require-Bundle: org.eclipse.graphiti,
+ org.eclipse.graphiti.ui,
+ org.eclipse.graphiti.pattern,
+ org.eclipse.emf.transaction,
+ es.ucm.fdi.edd.emf,
+ org.eclipse.gef,
+ org.eclipse.ui.views.properties.tabbed
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %Bundle-Vendor

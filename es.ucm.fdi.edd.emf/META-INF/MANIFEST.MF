@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: es.ucm.fdi.edd.emf;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Bundle-ClassPath: .
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore;visibility:=reexport
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: es.ucm.fdi.edd.emf.model.edd,
+ es.ucm.fdi.edd.emf.model.edd.impl,
+ es.ucm.fdi.edd.emf.model.edd.util
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin

@@ -1,0 +1,266 @@
+{
+  "guia": {
+    "-id": "1",
+    "-name": "Tutoriales Android",
+    "tema": {
+      "-id": "1",
+      "-name": "Unidad 1. Visión general y entorno de desarrollo",
+      "subTema": {
+        "-id": "1",
+        "-name": "Introducción",
+        "bloquePreguntas": {
+          "pregunta": [
+            {
+              "-id": "1",
+              "-idAyuda": "1",
+              "-idTipoPregunta": "4",
+              "-pregunta": "merge:merge([b], [a], fun merge:comp/2) = [b, a]?",
+              "respuestaLink": [
+                {
+                  "-idRespuesta": "1",
+                  "-esRespuesta": "true"
+                },
+                {
+                  "-idRespuesta": "2",
+                  "-esRespuesta": "false"
+                },
+                {
+                  "-idRespuesta": "3",
+                  "-esRespuesta": "false"
+                },
+                {
+                  "-idRespuesta": "4",
+                  "-esRespuesta": "false"
+                },
+                {
+                  "-idRespuesta": "5",
+                  "-esRespuesta": "false"
+                }
+              ]
+            },
+            {
+              "-id": "2",
+              "-idAyuda": "2",
+              "-idTipoPregunta": "4",
+              "-pregunta": "merge:comp(b, a) = false?",
+              "respuestaLink": [
+                {
+                  "-idRespuesta": "6",
+                  "-esRespuesta": "false"
+                },
+                {
+                  "-idRespuesta": "7",
+                  "-esRespuesta": "true"
+                },
+                {
+                  "-idRespuesta": "8",
+                  "-esRespuesta": "false"
+                },
+                {
+                  "-idRespuesta": "9",
+                  "-esRespuesta": "false"
+                }
+              ]
+            },
+            {
+              "-id": "3",
+              "-idAyuda": "3",
+              "-idTipoPregunta": "4",
+              "-pregunta": "merge:merge([a], [], fun merge:comp/2) = [a]?",
+              "respuestaLink": [
+                {
+                  "-idRespuesta": "1",
+                  "-esRespuesta": "false"
+                },
+                {
+                  "-idRespuesta": "2",
+                  "-esRespuesta": "false"
+                },
+                {
+                  "-idRespuesta": "3",
+                  "-esRespuesta": "false"
+                },
+                {
+                  "-idRespuesta": "5",
+                  "-esRespuesta": "true"
+                }
+              ]
+            },
+            {
+              "-id": "4",
+              "-idAyuda": "4",
+              "-idTipoPregunta": "4",
+              "-pregunta": "Do you want to follow the debugging session inside this function?",
+              "respuestaLink": [
+                {
+                  "-idRespuesta": "2",
+                  "-esRespuesta": "false"
+                },
+                {
+                  "-idRespuesta": "1",
+                  "-esRespuesta": "false"
+                },
+                {
+                  "-idRespuesta": "3",
+                  "-esRespuesta": "false"
+                },
+                {
+                  "-idRespuesta": "4",
+                  "-esRespuesta": "true"
+                },
+                {
+                  "-idRespuesta": "5",
+                  "-esRespuesta": "false"
+                }
+              ]
+            },
+            {
+              "-id": "5",
+              "-idAyuda": "5",
+              "-idTipoPregunta": "4",
+              "-pregunta": "fun(val1, ..., valn) = val?",
+              "respuestaLink": [
+                {
+                  "-idRespuesta": "2",
+                  "-esRespuesta": "false"
+                },
+                {
+                  "-idRespuesta": "1",
+                  "-esRespuesta": "false"
+                },
+                {
+                  "-idRespuesta": "3",
+                  "-esRespuesta": "false"
+                },
+                {
+                  "-idRespuesta": "4",
+                  "-esRespuesta": "true"
+                },
+                {
+                  "-idRespuesta": "5",
+                  "-esRespuesta": "false"
+                }
+              ]
+            },
+            {
+              "-id": "6",
+              "-idAyuda": "6",
+              "-idTipoPregunta": "4",
+              "-pregunta": "¿Qué plataforma ... 3.0?",
+              "respuestaLink": [
+                {
+                  "-idRespuesta": "2",
+                  "-esRespuesta": "false"
+                },
+                {
+                  "-idRespuesta": "1",
+                  "-esRespuesta": "false"
+                },
+                {
+                  "-idRespuesta": "3",
+                  "-esRespuesta": "false"
+                },
+                {
+                  "-idRespuesta": "4",
+                  "-esRespuesta": "true"
+                },
+                {
+                  "-idRespuesta": "5",
+                  "-esRespuesta": "false"
+                }
+              ]
+            }
+          ]
+        },
+        "bloqueAyudas": {
+          "ayuda": [
+            {
+              "-idAyuda": "1",
+              "#text": "Ayuda1"
+            },
+            {
+              "-idAyuda": "2",
+              "#text": "Ayuda2"
+            },
+            {
+              "-idAyuda": "3",
+              "#text": "Ayuda3"
+            },
+            {
+              "-idAyuda": "4",
+              "#text": "Ayuda4"
+            }
+          ]
+        }
+      }
+    },
+    "bloqueRespuestas": {
+      "respuesta": [
+        {
+          "-idRespuesta": "1",
+          "#text": "Android"
+        },
+        {
+          "-idRespuesta": "2",
+          "#text": "Apple IOS"
+        },
+        {
+          "-idRespuesta": "3",
+          "#text": "Symbian"
+        },
+        {
+          "-idRespuesta": "4",
+          "#text": "Windows Phone"
+        },
+        {
+          "-idRespuesta": "5",
+          "#text": "BlackBerry"
+        },
+        {
+          "-idRespuesta": "6",
+          "#text": "Android y Apple IOS"
+        },
+        {
+          "-idRespuesta": "7",
+          "#text": "Android y Symbian"
+        },
+        {
+          "-idRespuesta": "8",
+          "#text": "Android y BlackBerry"
+        },
+        {
+          "-idRespuesta": "9",
+          "#text": "Windows Phone y BlackBerry"
+        }
+      ]
+    },
+    "bloqueTipoPregunta": {
+      "tipoPregunta": [
+        {
+          "-idTipoPregunta": "1",
+          "#text": "Entero"
+        },
+        {
+          "-idTipoPregunta": "2",
+          "#text": "Decimal"
+        },
+        {
+          "-idTipoPregunta": "3",
+          "#text": "Falso/Verdadero"
+        },
+        {
+          "-idTipoPregunta": "4",
+          "#text": "Opción única"
+        },
+        {
+          "-idTipoPregunta": "5",
+          "#text": "Opción múltiple"
+        },
+        {
+          "-idTipoPregunta": "6",
+          "#text": "Texto"
+        }
+      ]
+    }
+  }
+}

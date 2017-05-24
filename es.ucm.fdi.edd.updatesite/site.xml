@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="E-EDD Update site" url="https://github.com/jsanchezp/e-edd/blob/master/es.ucm.fdi.edd.updatesite/site.xml">
+      Sitio de actualizaciones para el proyecto E-EDD
+   </description>
+   <feature url="features/es.ucm.fdi.edd.feature_1.0.0.201509302235.jar" id="es.ucm.fdi.edd.feature" version="1.0.0.201509302235">
+      <category name="E-EDD"/>
+   </feature>
+   <category-def name="E-EDD" label="E-EDD">
+      <description>
+         E-EDD Category
+      </description>
+   </category-def>
+</site>

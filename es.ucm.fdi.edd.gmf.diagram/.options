@@ -1,0 +1,7 @@
+# Tracing options for the es.ucm.fdi.edd.gmf.diagram plug-in
+
+# Common issues
+es.ucm.fdi.edd.gmf.diagram/debug=false
+
+# Visual IDs
+es.ucm.fdi.edd.gmf.diagram/debug/visualID=false

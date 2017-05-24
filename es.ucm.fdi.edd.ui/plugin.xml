@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="es.ucm.fdi.edd.ui.category"
+            name="EDD">
+      </category>
+      <wizard
+            category="es.ucm.fdi.edd.ui.category"
+            class="es.ucm.fdi.edd.ui.wizards.EDDQuestionsWizard"
+            icon="icons/sample.gif"
+            id="es.ucm.fdi.edd.ui.wizards.EDDQuestionsWizard"
+            name="EDD Questions Wizard">
+      </wizard>
+   </extension>
+<!--
+   <extension
+         point="org.eclipse.ui.viewActions">
+      <viewContribution
+            id="es.ucm.fdi.edd.ui.viewContributions"
+            targetID="es.ucm.fdi.edd.ui.views.GraphvizView">
+         <action
+               class="es.ucm.fdi.edd.ui.views.actions.PushActionDelegateTest"
+               enablesFor="*"
+               icon="icons/Open16.gif"
+               id="toolbar.open"
+               label="open"
+               toolbarPath="push_group"
+               tooltip="Open image">
+         </action>
+         <action
+               class="es.ucm.fdi.edd.ui.views.actions.PushActionDelegateTest"
+               enablesFor="*"
+               icon="icons/Fit16.gif"
+               id="toolbar.fit"
+               label="FitWindow"
+               toolbarPath="push_group"
+               tooltip="Fit window">
+         </action>
+         <action
+               class="es.ucm.fdi.edd.ui.views.actions.PushActionDelegateTest"
+               enablesFor="*"
+               icon="icons/Original16.gif"
+               id="toolbar.original"
+               label="OriginalSize"
+               toolbarPath="push_group"
+               tooltip="Original size">
+         </action>
+         <action
+               label="ZoomIn"
+               icon="icons/ZoomIn16.gif"
+               tooltip="Zoom in"
+               class="es.ucm.fdi.edd.ui.views.actions.PushActionDelegateTest"
+               toolbarPath="push_group"
+               enablesFor="*"
+               id="toolbar.zoomin">
+         </action>
+         <action
+               label="ZoomOut"
+               icon="icons/ZoomOut16.gif"
+               tooltip="Zoom out"
+               class="es.ucm.fdi.edd.ui.views.actions.PushActionDelegateTest"
+               toolbarPath="push_group"
+               enablesFor="*"
+               id="toolbar.zoomout">
+         </action>
+         <action
+               class="es.ucm.fdi.edd.ui.views.actions.SaveToFileAction"
+               disabledIcon="platform:/plugin/com.abstratt.imageviewer/icons/dsave_edit.gif"
+               icon="platform:/plugin/com.abstratt.imageviewer/icons/esave_edit.gif"
+               id="com.abstratt.imageviewer.saveFile"
+               label="Save to..."
+               style="push"
+               toolbarPath="file_actions"
+               tooltip="Save this image to a file">
+         </action>
+      </viewContribution>
+      <viewContribution
+            id="es.ucm.fdi.edd.ui.viewEDDContributions"
+            targetID="es.ucm.fdi.edd.ui.views.EDDViewer">
+         <action
+               label="open"
+               icon="icons/Open16.gif"
+               tooltip="Open image"
+               class="es.ucm.fdi.edd.ui.views.actions.PushActionDelegate"
+               toolbarPath="push_group"
+               enablesFor="*"
+               id="toolbar.open">
+         </action>
+         <action
+               label="Rotate"
+               icon="icons/Rotate16.gif"
+               tooltip="Rotate"
+               class="es.ucm.fdi.edd.ui.views.actions.PushActionDelegate"
+               toolbarPath="push_group"
+               enablesFor="*"
+               id="toolbar.rotate">
+         </action>
+         <action
+               label="FitWindow"
+               icon="icons/Fit16.gif"
+               tooltip="Fit window"
+               class="es.ucm.fdi.edd.ui.views.actions.PushActionDelegate"
+               toolbarPath="push_group"
+               enablesFor="*"
+               id="toolbar.fit">
+         </action>
+         <action
+               label="OriginalSize"
+               icon="icons/Original16.gif"
+               tooltip="Original size"
+               class="es.ucm.fdi.edd.ui.views.actions.PushActionDelegate"
+               toolbarPath="push_group"
+               enablesFor="*"
+               id="toolbar.original">
+         </action>
+         <action
+               label="ZoomIn"
+               icon="icons/ZoomIn16.gif"
+               tooltip="Zoom in"
+               class="es.ucm.fdi.edd.ui.views.actions.PushActionDelegate"
+               toolbarPath="push_group"
+               enablesFor="*"
+               id="toolbar.zoomin">
+         </action>
+         <action
+               label="ZoomOut"
+               icon="icons/ZoomOut16.gif"
+               tooltip="Zoom out"
+               class="es.ucm.fdi.edd.ui.views.actions.PushActionDelegate"
+               toolbarPath="push_group"
+               enablesFor="*"
+               id="toolbar.zoomout">
+         </action>
+         <action
+               class="es.ucm.fdi.edd.ui.views.actions.SaveToFileAction"
+               disabledIcon="platform:/plugin/com.abstratt.imageviewer/icons/dsave_edit.gif"
+               icon="platform:/plugin/com.abstratt.imageviewer/icons/esave_edit.gif"
+               id="es.ucm.fdi.edd.ui.views.actions.SaveToFileAction"
+               label="Save to..."
+               style="push"
+               toolbarPath="file_actions"
+               tooltip="Save this image to a file">
+         </action>
+      </viewContribution>
+   </extension>
+-->
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="es.ucm.fdi.edd.ui.category"
+            name="EDD">
+      </category>
+      <view
+            category="es.ucm.fdi.edd.ui.category"
+            class="es.ucm.fdi.edd.ui.views.GraphvizView"
+            icon="icons/sample.gif"
+            id="es.ucm.fdi.edd.ui.views.GraphvizView"
+            name="Graphviz View">
+      </view>
+      <view
+            category="es.ucm.fdi.edd.ui.category"
+            class="es.ucm.fdi.edd.ui.views.EDDViewer"
+            icon="icons/sample.gif"
+            id="es.ucm.fdi.edd.ui.views.EDDViewer"
+            name="EDD Viewer"
+            restorable="true">
+      </view>
+      <view
+      		category="es.ucm.fdi.edd.ui.category"
+            class="es.ucm.fdi.edd.ui.views.EDDebugView"
+            icon="icons/releng_gears.gif"
+            id="es.ucm.fdi.edd.ui.views.EDDebugView"
+            name="Erlang Declarative Debugger"
+            restorable="true">
+      </view>
+      <view
+            category="es.ucm.fdi.edd.ui.category"
+            class="es.ucm.fdi.edd.ui.views.EDDTreeView"
+            icon="icons/sample.gif"
+            id="es.ucm.fdi.edd.ui.views.EDDTreeView"
+            name="EDD Tree View">
+      </view>
+      <view
+            category="es.ucm.fdi.edd.ui.category"
+            class="es.ucm.fdi.edd.ui.views.DiagramView"
+            icon="icons/sample.gif"
+            id="es.ucm.fdi.edd.ui.views.DiagramView"
+            name="Diagram View">
+      </view>
+      <view
+      		category="es.ucm.fdi.edd.ui.category"
+            class="es.ucm.fdi.edd.ui.views.EddSequenceView"
+            icon="icons/sequencedgm.gif"
+            id="es.ucm.fdi.edd.ui.views.EddSequenceView"
+            name="Erlang Sequence Diagram"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchShortcuts">
+      <shortcut
+            class="es.ucm.fdi.edd.ui.launch.EDDLaunchShortcut"
+            icon="icons/sample.gif"
+            id="es.ucm.fdi.edd.ui.launch.EDDLaunchShortcut"
+            label="Erlang Declarative Debugger"
+            modes="run,debug">
+         <contextualLaunch>
+            <enablement>
+               <with
+                     variable="selection">
+                  <iterate>
+                     <adapt
+                           type="org.erlide.engine.model.root.IErlElement">
+                     </adapt>
+                  </iterate>
+               </with>
+            </enablement>
+         </contextualLaunch>
+         <configurationType
+               id="org.erlide.backend.erlangProcess">
+         </configurationType>
+         <description
+               description="Load this project in an Erlang node, starting it if needed."
+               mode="run">
+         </description>
+         <description
+               description="Load and debug this project in an Erlang node, starting it if needed."
+               mode="debug">
+         </description>
+      </shortcut>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.debug.ui.DebugPerspective">
+         <view
+               id="es.ucm.fdi.edd.ui.views.GraphvizView"
+               minimized="false"
+               ratio="0.5"
+               relationship="stack"
+               relative="es.ucm.fdi.edd.graphiti.views.EDDView">
+         </view>
+         <view
+               id="es.ucm.fdi.edd.ui.views.EDDViewer"
+               minimized="false"
+               ratio="0.5"
+               relationship="stack"
+               relative="es.ucm.fdi.edd.ui.views.GraphvizView">
+         </view>
+         <view
+               id="es.ucm.fdi.edd.ui.views.EDDThreadsTreeView"
+               minimized="false"
+               ratio="0.5"
+               relationship="stack"
+               relative="es.ucm.fdi.edd.ui.views.EDDViewer">
+         </view>
+         <view
+               id="es.ucm.fdi.edd.ui.views.EddSequenceView"
+               minimized="false"
+               ratio="0.5"
+               relationship="stack"
+               relative="es.ucm.fdi.edd.ui.views.EDDViewer">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="es.ucm.fdi.edd.ui.perspectives.EDDPerspective"
+            icon="icons/releng_gears.gif"
+            id="es.ucm.fdi.edd.ui.perspectives.EDDPerspective"
+            name="EDD">
+         <description>
+            %EDDPerspective.description
+         </description>
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="es.ucm.fdi.edd.ui.commands.Hello"
+            id="es.ucm.fdi.edd.ui.commands.hello"
+            name="Hello">
+      </command>
+      <command
+            id="es.ucm.fdi.edd.ui.commands.debugStart"
+            name="Start">
+      </command>
+      <command
+			id="es.ucm.fdi.edd.ui.commands.saveSeqDiagram"
+			name="Save Sequence">
+	  </command>
+      <command
+            id="es.ucm.fdi.edd.ui.commands.seqDiagramStart"
+            name="Start Sequence">
+      </command>
+      <command
+            id="es.ucm.fdi.edd.ui.commands.debugBack"
+            name="Back">
+      </command>
+      <command
+            id="es.ucm.fdi.edd.ui.commands.debugNext"
+            name="Next">
+      </command>
+      <command
+            id="es.ucm.fdi.edd.ui.commands.debugFinish"
+            name="Finish">
+      </command>
+      <command
+            id="es.ucm.fdi.edd.ui.commands.debugCancel"
+            name="Cancel">
+      </command>
+      <command
+            id="es.ucm.fdi.edd.ui.commands.pushActionDelegate"
+            name="PushActionDelegate">
+         <commandParameter
+               id="es.ucm.fdi.edd.ui.commands.pushActionDelegate.commandParameterActionName"
+               name="actionName"
+               optional="false">
+         </commandParameter>
+      </command>
+      <command
+            id="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest"
+            name="PushActionDelegateTest">
+         <commandParameter
+               id="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest.commandParameterActionName"
+               name="actionName"
+               optional="false">
+         </commandParameter>
+      </command>
+      <command
+            id="es.ucm.fdi.edd.ui.commands.save"
+            name="Save">
+      </command>
+      <command
+            defaultHandler="es.ucm.fdi.edd.ui.commands.LinkSelectionHandler"
+            id="es.ucm.fdi.edd.ui.commands.link"
+            name="Link with Editor and Selection">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:false"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+      <command
+            defaultHandler="es.ucm.fdi.edd.ui.commands.StartDebugger"
+            id="es.ucm.fdi.edd.ui.commands.restartServer"
+            name="Restart server">
+      </command>
+      <command
+            defaultHandler="es.ucm.fdi.edd.ui.commands.ClearAndResetDebugger"
+            id="es.ucm.fdi.edd.ui.commands.clearServer"
+            name="Clear server">
+      </command>
+      <command
+            defaultHandler="es.ucm.fdi.edd.ui.commands.Help"
+            id="es.ucm.fdi.edd.ui.commands.help"
+            name="Help">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="es.ucm.fdi.edd.ui.commands.StartDebugServer"
+            commandId="es.ucm.fdi.edd.ui.commands.debugStart">
+      </handler>
+      <handler
+            class="es.ucm.fdi.edd.ui.commands.StartConcurrentDebugServer"
+            commandId="es.ucm.fdi.edd.ui.commands.seqDiagramStart">
+      </handler>
+      <handler
+			class="es.ucm.fdi.edd.ui.commands.SaveSeqDiagram"
+			commandId="es.ucm.fdi.edd.ui.commands.saveSeqDiagram">
+  	  </handler>
+      <handler
+            class="es.ucm.fdi.edd.ui.commands.BackCommand"
+            commandId="es.ucm.fdi.edd.ui.commands.debugBack">
+      </handler>
+      <handler
+            class="es.ucm.fdi.edd.ui.commands.NextCommand"
+            commandId="es.ucm.fdi.edd.ui.commands.debugNext">
+      </handler>
+      <handler
+            class="es.ucm.fdi.edd.ui.commands.FinishCommand"
+            commandId="es.ucm.fdi.edd.ui.commands.debugFinish">
+      </handler>
+      <handler
+            class="es.ucm.fdi.edd.ui.commands.StopDebugServer"
+            commandId="es.ucm.fdi.edd.ui.commands.debugCancel">
+      </handler>
+      <handler
+            class="es.ucm.fdi.edd.ui.commands.PushActionDelegateCommand"
+            commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegate">
+      </handler>
+      <handler
+            class="es.ucm.fdi.edd.ui.commands.PushActionDelegateTestCommand"
+            commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest">
+      </handler>
+      <handler
+            class="es.ucm.fdi.edd.ui.commands.Save2FileCommand"
+            commandId="es.ucm.fdi.edd.ui.commands.save">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:es.ucm.fdi.edd.ui.views.EDDebugView">
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.debugStart"
+               disabledIcon="icons/resume_co_disable.gif"
+               icon="icons/resume_co.gif"
+               label="Start"
+               style="push"
+               tooltip="Start debugging">
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.seqDiagramStart"
+               disabledIcon="icons/sequencedgm_disable.gif"
+               icon="icons/sequencedgm.gif"
+               label="Start Sequence"
+               style="push"
+               tooltip="Start sequence diagram">
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.debugBack"
+               icon="icons/prev.gif"
+               label="Back"
+               style="push"
+               tooltip="Go to previous question">
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.debugNext"
+               icon="icons/next.gif"
+               label="Next"
+               style="push"
+               tooltip="Go to next question">
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.debugFinish"
+               icon="icons/validate.gif"
+               label="Review"
+               style="push"
+               tooltip="Go to current question">
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.debugCancel"
+               disabledIcon="icons/stop_disable.gif"
+               icon="icons/stop.gif"
+               label="Cancel"
+               style="push"
+               tooltip="Stop debugging">
+         </command>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:es.ucm.fdi.edd.ui.views.GraphvizView">
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.link"
+               icon="icons/synced.gif"
+               label="Link with Editor and Selection"
+               style="toggle"
+               tooltip="Link with Editor and Selection">
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest"
+               icon="icons/ZoomOut16.gif"
+               id="toolbar.zoomout"
+               label="Zoom out"
+               style="push"
+               tooltip="Zoom out">
+            <parameter
+                  name="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest.commandParameterActionName"
+                  value="toolbar.zoomout">
+            </parameter>
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest"
+               icon="icons/ZoomIn16.gif"
+               id="toolbar.zoomin"
+               label="Zoom in"
+               style="push"
+               tooltip="Zoom in">
+            <parameter
+                  name="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest.commandParameterActionName"
+                  value="toolbar.zoomin">
+            </parameter>
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest"
+               icon="icons/Original16.gif"
+               id="toolbar.original"
+               label="Original size"
+               style="push"
+               tooltip="Original size">
+            <parameter
+                  name="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest.commandParameterActionName"
+                  value="toolbar.original">
+            </parameter>
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest"
+               icon="icons/Fit16.gif"
+               id="toolbar.fit"
+               label="Fit window"
+               style="push"
+               tooltip="Fit window">
+            <parameter
+                  name="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest.commandParameterActionName"
+                  value="toolbar.fit">
+            </parameter>
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest"
+               icon="icons/Open16.gif"
+               id="toolbar.open"
+               label="Open"
+               style="push"
+               tooltip="Open">
+            <parameter
+                  name="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest.commandParameterActionName"
+                  value="toolbar.open">
+            </parameter>
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.save"
+               disabledIcon="platform:/plugin/com.abstratt.imageviewer/icons/dsave_edit.gif"
+               helpContextId="Save to..."
+               icon="platform:/plugin/com.abstratt.imageviewer/icons/esave_edit.gif"
+               id="toolbar.save"
+               label="Save to..."
+               style="push"
+               tooltip="Save this image to a file">
+         </command>
+      </menuContribution>
+       <menuContribution
+            allPopups="false"
+            locationURI="toolbar:es.ucm.fdi.edd.ui.views.EDDThreadsTreeView">
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest"
+               icon="icons/ZoomOut16.gif"
+               id="toolbar.zoomout"
+               label="Zoom out"
+               style="push"
+               tooltip="Zoom out">
+            <parameter
+                  name="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest.commandParameterActionName"
+                  value="toolbar.zoomout">
+            </parameter>
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest"
+               icon="icons/ZoomIn16.gif"
+               id="toolbar.zoomin"
+               label="Zoom in"
+               style="push"
+               tooltip="Zoom in">
+            <parameter
+                  name="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest.commandParameterActionName"
+                  value="toolbar.zoomin">
+            </parameter>
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest"
+               icon="icons/Original16.gif"
+               id="toolbar.original"
+               label="Original size"
+               style="push"
+               tooltip="Original size">
+            <parameter
+                  name="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest.commandParameterActionName"
+                  value="toolbar.original">
+            </parameter>
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest"
+               icon="icons/Fit16.gif"
+               id="toolbar.fit"
+               label="Fit window"
+               style="push"
+               tooltip="Fit window">
+            <parameter
+                  name="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest.commandParameterActionName"
+                  value="toolbar.fit">
+            </parameter>
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest"
+               icon="icons/Open16.gif"
+               id="toolbar.open"
+               label="Open"
+               style="push"
+               tooltip="Open">
+            <parameter
+                  name="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest.commandParameterActionName"
+                  value="toolbar.open">
+            </parameter>
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.save"
+               disabledIcon="platform:/plugin/com.abstratt.imageviewer/icons/dsave_edit.gif"
+               helpContextId="Save to..."
+               icon="platform:/plugin/com.abstratt.imageviewer/icons/esave_edit.gif"
+               id="toolbar.save"
+               label="Save to..."
+               style="push"
+               tooltip="Save this image to a file">
+         </command>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:es.ucm.fdi.edd.ui.views.EDDViewer">
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegate"
+               icon="icons/ZoomOut16.gif"
+               id="toolbar.zoomout"
+               label="Zoom out"
+               style="push"
+               tooltip="Zoom out">
+            <parameter
+                  name="es.ucm.fdi.edd.ui.commands.pushActionDelegate.commandParameterActionName"
+                  value="toolbar.zoomout">
+            </parameter>
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegate"
+               icon="icons/ZoomIn16.gif"
+               id="toolbar.zoomin"
+               label="Zoom  in"
+               style="push"
+               tooltip="Zoom in">
+            <parameter
+                  name="es.ucm.fdi.edd.ui.commands.pushActionDelegate.commandParameterActionName"
+                  value="toolbar.zoomin">
+            </parameter>
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegate"
+               icon="icons/Rotate16.gif"
+               id="toolbar.rotate"
+               label="Rotate"
+               style="push"
+               tooltip="Rotate">
+            <parameter
+                  name="es.ucm.fdi.edd.ui.commands.pushActionDelegate.commandParameterActionName"
+                  value="toolbar.rotate">
+            </parameter>
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegate"
+               icon="icons/Original16.gif"
+               id="toolbar.original"
+               label="Original size"
+               style="push"
+               tooltip="Original size">
+            <parameter
+                  name="es.ucm.fdi.edd.ui.commands.pushActionDelegate.commandParameterActionName"
+                  value="toolbar.original">
+            </parameter>
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegate"
+               icon="icons/Fit16.gif"
+               id="toolbar.fit"
+               label="Fit window"
+               style="push"
+               tooltip="Fit window">
+            <parameter
+                  name="es.ucm.fdi.edd.ui.commands.pushActionDelegate.commandParameterActionName"
+                  value="toolbar.fit">
+            </parameter>
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegate"
+               icon="icons/Open16.gif"
+               id="toolbar.open"
+               label="Open"
+               style="push"
+               tooltip="Open">
+            <parameter
+                  name="es.ucm.fdi.edd.ui.commands.pushActionDelegate.commandParameterActionName"
+                  value="toolbar.open">
+            </parameter>
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.save"
+               disabledIcon="platform:/plugin/com.abstratt.imageviewer/icons/dsave_edit.gif"
+               icon="platform:/plugin/com.abstratt.imageviewer/icons/esave_edit.gif"
+               id="toolbar.save"
+               label="Save to..."
+               style="push"
+               tooltip="Save this image to a file">
+         </command>
+      </menuContribution>
+      <menuContribution
+            allPopups="true"
+            locationURI="toolbar:formsEDDebugToolBar">
+         <!--
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.clearServer"
+               icon="icons/clear.gif"
+               label="Clear debugger"
+               style="push"
+               tooltip="Clear the current debugger section">
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.restartServer"
+               icon="icons/execution_obj.gif"
+               label="Execute debugger"
+               style="push"
+               tooltip="Execute Erlang Declarative Debugger">
+         </command>
+         -->
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.help"
+               icon="icons/help.gif"
+               label="Help"
+               style="push">
+         </command>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:es.ucm.fdi.edd.ui.views.EddSequenceView">
+          <command
+		    commandId="es.ucm.fdi.edd.ui.commands.saveSeqDiagram"
+		    disabledIcon="platform:/plugin/com.abstratt.imageviewer/icons/dsave_edit.gif"
+		    icon="platform:/plugin/com.abstratt.imageviewer/icons/esave_edit.gif"
+            helpContextId="Save to..."
+		    label="Save Sequence"
+		    style="push"
+		    tooltip="Save sequence diagram">
+		 </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest"
+               icon="icons/ZoomOut16.gif"
+               id="toolbar.zoomout"
+               label="Zoom out"
+               style="push"
+               tooltip="Zoom out">
+            <parameter
+                  name="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest.commandParameterActionName"
+                  value="toolbar.zoomout">
+            </parameter>
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest"
+               icon="icons/ZoomIn16.gif"
+               id="toolbar.zoomin"
+               label="Zoom in"
+               style="push"
+               tooltip="Zoom in">
+            <parameter
+                  name="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest.commandParameterActionName"
+                  value="toolbar.zoomin">
+            </parameter>
+         </command>
+         <command
+               commandId="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest"
+               icon="icons/Original16.gif"
+               id="toolbar.original"
+               label="Original size"
+               style="push"
+               tooltip="Original size">
+            <parameter
+                  name="es.ucm.fdi.edd.ui.commands.pushActionDelegateTest.commandParameterActionName"
+                  value="toolbar.original">
+            </parameter>
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="contexts.xml">
+      </contexts>
+   </extension>
+   <extension
+         point="org.eclipse.core.expressions.propertyTesters">
+      <propertyTester
+            class="es.ucm.fdi.edd.ui.propertyTester.EDDPropertyTester"
+            id="es.ucm.fdi.edd.ui.propertyTester.EDDPropertyTester"
+            namespace="es.ucm.fdi.edd.ui.propertyTester"
+            properties="isQuestionPanelVisible,hasContent"
+            type="java.lang.Object">
+      </propertyTester>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="es.ucm.fdi.edd.ui.preferences.EDDPreferencesPage"
+            id="es.ucm.fdi.edd.ui.preferences.EDDPreferencesPage"
+            name="EDD Preferences">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="es.ucm.fdi.edd.ui.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.adapters">
+      <factory
+			adaptableType="org.erlide.ui.editors.erl.ErlangEditor"
+			class="es.ucm.fdi.edd.ui.adapters.EddAdapterFactory">
+			<adapter
+				type="org.eclipse.ui.views.contentoutline.IContentOutlinePage" />
+	  </factory>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <!--<editor
+            class="es.ucm.fdi.edd.ui.editors.MultiPageEddEditor"
+            contributorClass="es.ucm.fdi.edd.ui.editors.MultiPageEddEditorContributor"
+            default="false"
+            extensions="ed2"
+            icon="icons/sample.gif"
+            id="es.ucm.fdi.edd.ui.editors.MultiPageEddEditor"
+            name="Multi-page Edd Editor">
+      </editor>
+      <editor
+            class="es.ucm.fdi.edd.ui.editors.MultiPageEditor"
+            contributorClass="es.ucm.fdi.edd.ui.editors.MultiPageEditorContributor"
+            extensions="mpe"
+            icon="icons/sample.gif"
+            id="es.ucm.fdi.edd.ui.editors.MultiPageEditor"
+            name="Sample Multi-page Editor">
+      </editor>-->
+   </extension>
+
+</plugin>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphdesc:GVFigureDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:graphdesc="http://org.emftools.emf2gv.graphdesc/1.1.0">
+  <ePackages href="http://ed2/1.0#/"/>
+  <classFigures headerBackgroundColor="#D0BCFE" bodyBackgroundColor="#EFE8FE">
+    <eClass href="http://ed2/1.0#//Model"/>
+    <referenceFigures xsi:type="graphdesc:ReferenceFigure" sourceArrowType="diamond">
+      <eReference href="http://ed2/1.0#//Model/ed2"/>
+    </referenceFigures>
+  </classFigures>
+  <classFigures bodyBackgroundColor="#DEE9FD">
+    <eClass href="http://ed2/1.0#//ED2"/>
+    <labelEAttribute href="http://ed2/1.0#//ED2/name"/>
+    <referenceFigures xsi:type="graphdesc:ReferenceFigure" sourceArrowType="diamond">
+      <eReference href="http://ed2/1.0#//ED2/treeElements"/>
+    </referenceFigures>
+  </classFigures>
+  <classFigures headerBackgroundColor="#98FB98" bodyBackgroundColor="#DCFDDC">
+    <eClass href="http://ed2/1.0#//Node"/>
+    <labelEAttribute href="http://ed2/1.0#//TreeElement/name"/>
+    <attributeFigures xsi:type="graphdesc:AttributeFigure">
+      <eAttribute href="http://ed2/1.0#//TreeElement/index"/>
+    </attributeFigures>
+    <attributeFigures xsi:type="graphdesc:AttributeFigure">
+      <eAttribute href="http://ed2/1.0#//TreeElement/type"/>
+    </attributeFigures>
+    <referenceFigures xsi:type="graphdesc:ReferenceFigure" sourceArrowType="diamond">
+      <eReference href="http://ed2/1.0#//Node/leaves"/>
+    </referenceFigures>
+    <referenceFigures xsi:type="graphdesc:ReferenceFigure" sourceArrowType="diamond">
+      <eReference href="http://ed2/1.0#//Node/nodes"/>
+    </referenceFigures>
+  </classFigures>
+  <classFigures headerBackgroundColor="#FFF575" bodyBackgroundColor="#FFFBD1">
+    <eClass href="http://ed2/1.0#//Leaf"/>
+    <labelEAttribute href="http://ed2/1.0#//TreeElement/name"/>
+    <attributeFigures xsi:type="graphdesc:AttributeFigure">
+      <eAttribute href="http://ed2/1.0#//TreeElement/index"/>
+    </attributeFigures>
+    <attributeFigures xsi:type="graphdesc:AttributeFigure">
+      <eAttribute href="http://ed2/1.0#//TreeElement/type"/>
+    </attributeFigures>
+  </classFigures>
+</graphdesc:GVFigureDescription>
