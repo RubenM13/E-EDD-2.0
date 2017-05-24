@@ -3,22 +3,22 @@
       id="es.ucm.fdi.edd.feature"
       label="Feature"
       version="1.0.0.qualifier"
-      provider-name="E-EDD">
+      provider-name="E-EDD 2.0">
 
    <description url="http://www.example.com/description">
-      Descripción del proyecto E-EDD.
+      Descripción del proyecto E-EDD 2.0.
    </description>
 
    <copyright url="http://www.example.com/copyright">
-      (C) 2015 Copyright
+      (C) 2017 Copyright
    </copyright>
 
    <license url="http://www.example.com/license">
-      Acuerdo de licencia E-EDD.
+      Acuerdo de licencia E-EDD 2.0.
    </license>
 
    <url>
-      <discovery label="E-EDD" url="https://github.com/jsanchezp/e-edd"/>
+      <discovery label="E-EDD 2.0" url="https://github.com/RubenM13/E-EDD-2.0"/>
    </url>
 
    <requires>

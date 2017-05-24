@@ -1,4 +1,4 @@
-Manifest-Version: 1.0
+Manifest-Version: 2.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: es.ucm.fdi.edd.ui;singleton:=true
