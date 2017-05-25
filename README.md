@@ -1,7 +1,7 @@
-# e-edd
-Eclipse Erlang Declarative Debugger (e-edd)
+# e-edd 2.0
+Eclipse Erlang Declarative Debugger 2.0 (e-edd 2.0)
 ===========================================
-The Eclipse - Erlang Declarative Debuger uses:
+The Eclipse - Erlang Declarative Debuger 2.0 is a update version of the plugin Erlang Declarative Debuger, contained in a GIT repository on GitHub https://github.com/RubenM13/E-EDD-2.0, that uses:
 * The project 'edd' contained in a GIT repository on GitHub. 
  The URL is https://github.com/tamarit/edd
 * The project 'Erlide' contained in a GIT repository on GitHub.  
