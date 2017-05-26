@@ -3,7 +3,7 @@
    <description name="E-EDD Update site" url="https://github.com/RubenM13/E-EDD-2.0/tree/master/es.ucm.fdi.edd.updatesite/site.xml">
       Sitio de actualizaciones para el proyecto E-EDD 2.0
    </description>
-   <feature url="features/es.ucm.fdi.edd.feature_1.0.0.201705252018.jar" id="es.ucm.fdi.edd.feature" version="1.0.0.201705252018">
+   <feature url="features/es.ucm.fdi.edd.feature_1.0.0.201705261754.jar" id="es.ucm.fdi.edd.feature" version="1.0.0.201705261754">
       <category name="E-EDD 2.0"/>
    </feature>
    <category-def name="E-EDD 2.0" label="E-EDD 2.0">
